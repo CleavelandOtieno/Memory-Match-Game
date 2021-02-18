@@ -1,0 +1,491 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9916206F-CAF1-40D7-8756-58D908925D01}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CLEAVELAND_ONYANGO_AWD_2019</RootNamespace>
+    <AssemblyName>CLEAVELAND ONYANGO-AWD 2019</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CircularProgressBar, Version=2.7.0.7, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\CircularProgressBar.2.7.0.7\lib\net40\CircularProgressBar.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WinFormAnimation, Version=1.6.0.4, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\WinFormAnimation.1.6.0.4\lib\net40\WinFormAnimation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="gameGUIA-12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gameGUIA-12.Designer.cs">
+      <DependentUpon>gameGUIA-12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gameGUIA-24.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gameGUIA-24.Designer.cs">
+      <DependentUpon>gameGUIA-24.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gameGUIA-6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gameGUIA-6.Designer.cs">
+      <DependentUpon>gameGUIA-6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gameGUIF-12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gameGUIF-12.Designer.cs">
+      <DependentUpon>gameGUIF-12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gameGUIF-24.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gameGUIF-24.Designer.cs">
+      <DependentUpon>gameGUIF-24.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gameGUIF-6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gameGUIF-6.Designer.cs">
+      <DependentUpon>gameGUIF-6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gameGUIP-12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gameGUIP-12.Designer.cs">
+      <DependentUpon>gameGUIP-12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gameGUIP-24.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gameGUIP-24.Designer.cs">
+      <DependentUpon>gameGUIP-24.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gameGUIP-6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gameGUIP-6.Designer.cs">
+      <DependentUpon>gameGUIP-6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="levelCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="levelCard.Designer.cs">
+      <DependentUpon>levelCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="myClasses\myProgressBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="myClasses\myProgressBar.Designer.cs">
+      <DependentUpon>myProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="playerLOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="playerLOGIN.Designer.cs">
+      <DependentUpon>playerLOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="playerREGISTRATION.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="playerREGISTRATION.Designer.cs">
+      <DependentUpon>playerREGISTRATION.cs</DependentUpon>
+    </Compile>
+    <Compile Include="playerStats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="playerStats.Designer.cs">
+      <DependentUpon>playerStats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="selectPlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="selectPlayer.Designer.cs">
+      <DependentUpon>selectPlayer.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="gameGUIA-12.resx">
+      <DependentUpon>gameGUIA-12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gameGUIA-24.resx">
+      <DependentUpon>gameGUIA-24.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gameGUIA-6.resx">
+      <DependentUpon>gameGUIA-6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gameGUIF-12.resx">
+      <DependentUpon>gameGUIF-12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gameGUIF-24.resx">
+      <DependentUpon>gameGUIF-24.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gameGUIF-6.resx">
+      <DependentUpon>gameGUIF-6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gameGUIP-12.resx">
+      <DependentUpon>gameGUIP-12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gameGUIP-24.resx">
+      <DependentUpon>gameGUIP-24.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gameGUIP-6.resx">
+      <DependentUpon>gameGUIP-6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="levelCard.resx">
+      <DependentUpon>levelCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="myClasses\myProgressBar.resx">
+      <DependentUpon>myProgressBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="playerLOGIN.resx">
+      <DependentUpon>playerLOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="playerREGISTRATION.resx">
+      <DependentUpon>playerREGISTRATION.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="playerStats.resx">
+      <DependentUpon>playerStats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="selectPlayer.resx">
+      <DependentUpon>selectPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\baboon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baboon2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cow2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\elephant.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\elephant2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fox.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fox2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giraffe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giraffe2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lion.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lion2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panda.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panda2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parrot.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parrot2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rabbit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rabbit2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\squirrel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\squirrel2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thumbs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tortoise.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tortoise2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zebra.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zebra2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goback.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restart1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aloe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aloe2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bamboo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bamboo2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cactus.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cactus2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\daisy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\daisy2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fern.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fern2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ivy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ivy2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lily.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lily2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mushroom.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mushroom2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\palm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\palm2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rose.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rose2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sunflower.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sunflower2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tulip.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tulip2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apple.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apple2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avocado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avocado2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banana.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banana2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cherry.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cherry2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coconut.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coconut2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grapes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grapes2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guava.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guava2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kiwi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kiwi2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orange.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orange2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pineapple.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pineapple2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\strawberry.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\strawberry2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\watermelon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\watermelon2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\go.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
